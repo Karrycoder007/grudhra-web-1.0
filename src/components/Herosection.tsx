@@ -7,11 +7,11 @@ import { motion } from 'framer-motion';
 
 const Herosection = () => {
   return (
-    <section className="px-10 pt-8 pb-20  md:pt-5 md:10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip">
+    <section className="px-10 pt-8 pb-20  md:pt-5 md:10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] dark:bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#A2A5B1,#48589C_100%)] overflow-x-clip">
       <div className="container">
         <div className="md:flex md:gap-10">
         <div className="md:w-[698px]">
-          <div className="text-md mb-10 px-1 font-medium">#Grudhra 2.0
+          <div className="text-md mb-10 px-1 font-medium dark:text-black">#Grudhra 2.0
           </div>
           <motion.h1
            whileInView={{opacity:1,y:0}}
@@ -24,19 +24,21 @@ const Herosection = () => {
            whileInView={{opacity:1,y:0}}
            initial={{opacity:0,y:100}}
            transition={{duration:0.8}}
-           className="text-xl para text-[#010D3E] tracking-tight mt-6 para">Welcome to Grudhra Solutions, your premier partner in innovative IT solutions, cutting-edge marketing services, and sustainable living. At Grudhra Solutions, we are dedicated to empowering businesses and individuals with technology and strategies that drive growth and success, while also promoting environmental responsibility.</motion.p>
+           className="text-xl para text-[#101734] tracking-tight mt-6 para">Welcome to Grudhra Solutions, your premier partner in innovative IT solutions, cutting-edge marketing services, and sustainable living. At Grudhra Solutions, we are dedicated to empowering businesses and individuals with technology and strategies that drive growth and success, while also promoting environmental responsibility.</motion.p>
           <div className="flex gap-1 items-center mt-[40px]  ">
             <motion.a
               whileInView={{opacity:1,y:0}}
               initial={{opacity:0,y:100}}
               transition={{duration:3.8}} 
-              href="/contact" className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center">Contact Us</motion.a>
+              
+              href="/contact" className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center hover:text-lg">Contact Us</motion.a>
             <motion.a  whileInView={{opacity:1,y:0}}
               initial={{opacity:0,y:100}}
               transition={{duration:3.8}}
+              
 
               href='/about'
-              className='px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center gap-2 cursor-pointer' >
+              className='px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center gap-2 cursor-pointer hover:text-lg dark:text-gray-200' >
               <span>Learn More</span>
               <FaArrowRight   className="h-5 w-8 m-1"/>
               </motion.a>

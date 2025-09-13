@@ -23,21 +23,21 @@ const Vision = () => {
            whileInView={{opacity:1, y:0}}
            initial={{opacity:0, y:100}}
            transition={{duration:0.8}}
-           className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 mb-4 heading-2">
+           className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 dark:text-gray-300 mb-4 heading-2">
             Grudhra Solutions Vision
           </motion.h2> 
           <motion.p
            whileInView={{opacity:1, y:0}}
            initial={{opacity:0, y:100}}
            transition={{duration:0.8}}
-           className="text-xl text-gray-600 mb-4 para">
+           className="text-xl text-gray-600 dark:text-gray-400 mb-4 para">
             At Grudhra Solutions, we are committed to delivering innovative and sustainable solutions across various sectors. Our offerings include website and app development, marketing services, IT solutions, and eco-friendly products such as biodegradable plates and kitchenware.
           </motion.p>
           <motion.p
            whileInView={{opacity:1, y:0}}
            initial={{opacity:0, y:100}}
            transition={{duration:0.8}}
-           className="text-xl text-gray-600 mb-4 para">
+           className="text-xl text-gray-600 dark:text-gray-400 mb-4 para">
             Our team is dedicated to providing top-notch services tailored to meet the unique needs of each client. We believe in the power of technology to transform businesses and improve lives, and we strive to make a positive impact through our innovative solutions.
           </motion.p>
           
@@ -53,21 +53,21 @@ const Vision = () => {
            whileInView={{opacity:1, y:0}}
            initial={{opacity:0, y:100}}
            transition={{duration:0.8}}
-           className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 mb-4 heading-2">
+           className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 dark:text-white mb-4 heading-2">
             Our Commitment
           </motion.h2>
           <motion.p 
            whileInView={{opacity:1, y:0}}
            initial={{opacity:0, y:100}}
            transition={{duration:0.8}}
-           className="text-xl text-gray-600 para">
+           className="text-xl text-gray-600 dark:text-gray-400 para">
             We envision a future where technology and sustainability go hand in hand, creating a positive impact on businesses and the environment. By integrating advanced technology with eco-friendly practices, we strive to lead the way in both industry and environmental stewardship.
           </motion.p>
           <motion.p
            whileInView={{opacity:1, y:0}}
            initial={{opacity:0, y:100}}
            transition={{duration:0.8}}
-           className="text-xl text-gray-600 para">
+           className="text-xl text-gray-600 dark:text-gray-400 para">
             Our commitment extends beyond just providing services. We aim to be a trusted partner for our clients, working closely with them to understand their goals and challenges. Through collaboration and innovation, we help them achieve their objectives and thrive in a competitive landscape.
           </motion.p>
          
@@ -83,3 +83,7 @@ const Vision = () => {
 };
 
 export default Vision;
+
+
+
+

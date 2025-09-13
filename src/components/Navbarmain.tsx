@@ -17,35 +17,35 @@ const Navbarmain = () => {
   };
 
   return (
-    <header className="sticky top-0 backdrop-blur-sm z-30 heading-2">
+    <header className="sticky top-0 backdrop-blur-sm z-30 heading-2  ">
       <div className='py-5 px-10'>
         <div className='container'>
           <div className='flex items-center justify-between'>
             <img src="./grudhralogo.png" alt="" height="60" width="60" className="rounded-full" />
             {isMenuOpen ? (
               <MdClose 
-                className="h-8 w-8 text-black md:hidden max-sm:block cursor-pointer"
+                className="h-8 w-8 text-black dark:text-gray-500 md:hidden max-sm:block cursor-pointer"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               />
             ) : (
               <HiMenuAlt3 
-                className="h-8 w-8 text-black md:hidden max-sm:block cursor-pointer"
+                className="h-8 w-8 text-black dark:text-gray-400 md:hidden max-sm:block cursor-pointer"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               />
             )}
-            <nav className="hidden md:flex gap-6 text-black">
+            <nav className="hidden md:flex gap-6 text-black dark:text-gray-300">
               {['Home', 'About', 'Contact Us'].map((item, index) => (
                 <a 
                   key={index} 
                   href={item === 'Home' ? '/' : item === 'About' ? '/about' : '/contact'} // Adjust href based on the link
-                  className="text-2xl relative group"
+                  className="text-xl relative group"
                   onMouseEnter={() => setIsHovered(item)}
                   onMouseLeave={() => setIsHovered('')}
                 >
                   {item}
                   {isHovered === item && (
                     <motion.div
-                      className="absolute left-0 bottom-0 w-full h-0.5 bg-black origin-left"
+                      className="absolute left-0 bottom-0 w-full h-0.5 bg-black dark:bg-gray-400 origin-left"
                       initial={{ scaleX: 0 }}
                       animate={{ scaleX: 1 }}
                       exit={{ scaleX: 0 }}
@@ -60,7 +60,7 @@ const Navbarmain = () => {
                 onMouseLeave={() => setIsHovered('')}
               >
                 <button 
-                  className="text-2xl flex flex-row items-center"
+                  className="text-xl flex flex-row items-center"
                   onClick={handleDropdownClick}
                 >
                   What We Provide <IoMdArrowDropdown className='ml-1 mt-1' />
@@ -78,17 +78,18 @@ const Navbarmain = () => {
                       <a href="/marketing" className="block px-4 py-2 text-black hover:bg-gray-300" target="_blank">Digital Marketing</a>
                       <a href="/webappservices" className="block px-4 py-2 text-black hover:bg-gray-300" target="_blank">Web and App Services</a>
                       <a href="/biodegradable" className="block px-4 py-2 text-black hover:bg-gray-300" target="_blank">Bio-degradable Products</a>
+                      <a href="/designandwork" className="block px-4 py-2 text-black hover:bg-gray-300" target="_blank"> Custom Projects</a>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
-              <div className='flex flex-row gap-5 text-2xl justify-center items-center cursor-pointer'>
-                <a href="https://www.linkedin.com/in/coderkarry007/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn className='text-gray-700 hover:text-blue-600'/></a>
-                <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"><FaInstagram className='text-gray-700 hover:text-pink-500'/></a>
-                <a href="https://www.linkedin.com/in/coderkarry007/" target="_blank" rel="noopener noreferrer">
-              <BsTwitterX className="text-gray-700 hover:text-blue-600" />
+              {/* <div className='flex flex-row gap-5 text-2xl justify-center items-center cursor-pointer'>
+                <a href="https://www.linkedin.com/company/gudhrasolutionspvtltd/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn className='text-gray-700 dark:text-gray-400 hover:text-blue-600'/></a>
+                <a href="https://www.instagram.com/grudhrasolutions_pvt_ltd/" target="_blank" rel="noopener noreferrer"><FaInstagram className='text-gray-700 dark:text-gray-400 hover:text-pink-500'/></a>
+                <a href="https://x.com/GrudhraSolution?t=sVOHqKtfUKdgH57YGu2N9w&s=09" target="_blank" rel="noopener noreferrer">
+              <BsTwitterX className="text-gray-700 dark:text-gray-400 hover:text-blue-600" />
             </a>
-              </div>
+              </div> */}
             </nav>
           </div>
         </div>
@@ -145,6 +146,8 @@ const Navbarmain = () => {
                       <a href="/marketing" className="block px-4 py-2 text-black hover:bg-gray-300" target="_blank">Digital Marketing</a>
                       <a href="/webappservices" className="block px-4 py-2 text-black hover:bg-gray-300" target="_blank">Web and App Services</a>
                       <a href="/biodegradable" className="block px-4 py-2 text-black hover:bg-gray-300" target="_blank">Bio-degradable Products</a>
+                      <a href="/designandwork" className="block px-4 py-2 text-black hover:bg-gray-300" target="_blank"> Custom Projects</a>
+                      
                     </motion.div>
                   )}
                 </AnimatePresence>

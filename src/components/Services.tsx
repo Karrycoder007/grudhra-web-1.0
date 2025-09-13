@@ -36,7 +36,7 @@ const Services = () => {
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 100 }}
       transition={{ duration: 0.8 }}
-      className="px-20 "
+      className="px-10 "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-2">
         <div className="flex flex-start">
@@ -44,7 +44,7 @@ const Services = () => {
            whileInView={{opacity:1,y:0}}
            initial={{opacity:0,y:100}}
            transition={{duration:0.8}}
-           className="heading-2 text-7xl bg-clip-text text-transparent bg-gradient-to-b dark:from-neutral-50 to-neutral-400 from-neutral-500 to-neutral-900 font-semibold tracking-wide">
+           className="heading-2 text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 from-neutral-400 to-neutral-700 dark:bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 from-neutral-300 to-neutral-500 font-semibold tracking-wide">
             Services that we Provide.
           </motion.h2>
         </div>
@@ -53,18 +53,14 @@ const Services = () => {
           {services.map((service, index) => (
             <div key={index} className="flex flex-col items-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out p-6 bg-slate-700 dark:bg-slate-600">
               <div className="w-full h-80 bg-cover bg-center mb-4 rounded-lg " style={{ backgroundImage: `url(${service.image})` }}></div>
-              <h3 className="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-b dark:from-neutral-50 to-neutral-400 from-neutral-300 to-neutral-300 text-center mb-5">{service.title}</h3>
+              <h3 className="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 from-neutral-300 to-neutral-300 text-center mb-5">{service.title}</h3>
               <p className="text-lg text-center text-gray-300 para">{service.description}</p>
               <a href={service.link} className='text-xl  m-10   text-gray-300 hover:text-gray-100 heading-2 flex flex-row gap-1  ' target="_blank"> View <MdOutlineArrowOutward  className="text-3xl text-gray-200 hover:text-red-500"/></a>
             </div>
           ))}
         </div>
 
-        {/* <div className="flex justify-center items-center">
-          <a href="" className="">
-            <button className="bg-slate-500 p-3 rounded-lg mt-10 text-white text-md font-semibold hover:bg-slate-600">Explore More.</button>
-          </a>
-        </div> */}
+        
       </div>
     </motion.div>
   );

@@ -10,7 +10,7 @@ const Youtube = () => {
         whileInView={{opacity:1,y:0}}
         initial={{opacity:0,y:100}}
         transition={{duration:0.8}}
-         className="flex justify-center items-center m-10 text-5xl heading-2">Visit Our Channel</motion.h2>
+         className="flex justify-center items-center p-10 text-5xl heading-2">Visit Our Channel</motion.h2>
 
          
     <motion.div

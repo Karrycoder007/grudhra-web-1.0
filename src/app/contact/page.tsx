@@ -4,8 +4,10 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="bg-slate-100 h-full ">
+    <div className="bg-slate-300 h-full ">
+        <div className="pb-10 dark:bg-black">
         <ContactForm/>
+        </div>
         
         <Footer/> 
       

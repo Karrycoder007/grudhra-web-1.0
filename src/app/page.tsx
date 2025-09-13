@@ -4,9 +4,10 @@ import About from "@/components/About";
 
 import Footer from "@/components/Footer";
 import Herosection from "@/components/Herosection";
-
-
 import { Newsletter } from "@/components/Newsletter";
+
+
+
 import Preloader from "@/components/Preloader";
 import Services from "@/components/Services";
 import { Simpleslider } from "@/components/Simpleslider";
@@ -48,7 +49,7 @@ import { useEffect, useState } from "react";
     return (
     
     
-      <main className="font-poppins min-h-screen bg-black[0.96] antialised bg-gray-300 dark:text-white scroll-smooth ">
+      <main className="font-poppins min-h-screen bg-black[0.96] antialised bg-gray-300 dark:bg-black dark:text-white scroll-smooth overflow-x-hidden ">
         <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
@@ -57,12 +58,9 @@ import { useEffect, useState } from "react";
         <About/>     
         <Services/>
         <Vision/> 
-        {/* <Newsletter/> */}
         <Simpleslider/>
+        {/* <Newsletter/> */}
         <Youtube/>
-       {/* <Testimonial/> */}
-       
-       
        <Footer/> 
       </main>
         

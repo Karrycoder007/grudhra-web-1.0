@@ -23,7 +23,7 @@ export function Simpleslider() {
         transition={{
           duration: 0.6,
         }}
-        className=" flex flex-col justify-center items-center brightness-200 mt-10 "
+        className=" flex flex-col justify-center items-center brightness-200 overflow-x-hidden "
       >
         
        

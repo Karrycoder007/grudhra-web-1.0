@@ -37,32 +37,32 @@ const products: Product[] = [
 
 const Page: React.FC = () => {
   return (
-    <div className=" bg-gray-300 ">
-      <div className="text-center mb-10 pt-10">
-        <h1 className="text-5xl font-bold mb-4">Our Biodegradable Products</h1>
-        <p className="text-lg para">Explore our range of eco-friendly products made from areca leaves. They are sustainable, biodegradable, and perfect for everyday use.</p>
+    <div className=" bg-gray-300 dark:bg-black  ">
+      <div className="text-center mb-10 pt-10 ">
+        <h1 className="text-5xl font-bold mb-4 dark:text-gray-300 ">Our Biodegradable Products</h1>
+        <p className="text-lg para dark:text-gray-400">Explore our range of eco-friendly products made from areca leaves. They are sustainable, biodegradable, and perfect for everyday use.</p>
       </div>
 
-      <div className="bg-gray-300 p-8 rounded-lg px-20">
-        <h2 className="text-4xl font-bold mb-4 text-center">Why Choose Biodegradable Products?</h2>
-        <p className="para text-lg mb-4">Using biodegradable products is a crucial step towards reducing plastic waste and preserving our environment. Here are some reasons why you should consider making the switch:</p>
-        <ul className="list-disc list-inside space-y-2 para">
+      <div className=" p-8 rounded-lg px-20">
+        <h2 className="text-4xl font-bold mb-4 text-center dark:text-gray-300">Why Choose Biodegradable Products?</h2>
+        <p className="para text-lg mb-4 dark:text-gray-300">Using biodegradable products is a crucial step towards reducing plastic waste and preserving our environment. Here are some reasons why you should consider making the switch:</p>
+        <ul className="list-disc list-inside space-y-2 para dark:text-gray-300">
           <li>Biodegradable products decompose naturally, reducing landfill waste and pollution.</li>
           <li>They are made from sustainable materials that have a lower environmental impact.</li>
           <li>Using biodegradable products helps conserve natural resources and reduce carbon footprints.</li>
           <li>They are safe for wildlife, as they break down without releasing harmful toxins.</li>
           <li>Biodegradable products promote a circular economy by encouraging recycling and composting.</li>
         </ul>
-        <p className="para text-lg mt-4">By choosing biodegradable products, you are contributing to a healthier planet and supporting sustainable practices. Let's work together to reduce plastic waste and protect our environment for future generations.</p>
+        <p className="para text-lg mt-4 dark:text-gray-300">By choosing biodegradable products, you are contributing to a healthier planet and supporting sustainable practices. Let's work together to reduce plastic waste and protect our environment for future generations.</p>
       </div>
 
       <div className="mb-12 px-20">
-        <h2 className="text-3xl font-bold mb-4 text-center">What is the Areca Plant?</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center dark:text-gray-200 ">What is the Areca Plant?</h2>
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8 pt-5">
           <div className="md:w-1/2 mb-4 md:mb-0">
             <img src="https://images.unsplash.com/photo-1529685420453-8835ca76f78b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Areca Plant" className="w-5/6 h-auto rounded-lg shadow-md"/>
           </div>
-          <div className="md:w-1/2 pt-5">
+          <div className="md:w-1/2 pt-5 dark:text-gray-300">
             <p className="text-lg mb-4 para">The areca plant, also known as Areca catechu, is a species of palm that is widely cultivated for its seeds, known as betel nuts. The leaves of the areca plant are sturdy, flexible, and naturally biodegradable, making them an excellent material for producing eco-friendly products.</p>
             <p className="text-lg mb-4 para">Areca leaves are harvested, cleaned, and molded into various shapes to create disposable plates, cups, spoons, and storage boxes. These products are not only sustainable but also add a natural aesthetic to any setting.</p>
             <p className="text-lg para">By using products made from areca leaves, we can reduce our dependence on plastic and contribute to a healthier environment.</p>

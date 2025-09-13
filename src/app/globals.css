@@ -6,6 +6,21 @@ body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient( to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
     scroll-behavior: smooth;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+       
+    }
 }
 
 @layer utilities {
